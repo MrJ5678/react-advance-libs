@@ -1,5 +1,17 @@
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
+
 function App() {
-  return <div className="App">111</div>
+  const notify = () => {
+    toast("wow so easy!")
+  }
+
+  return (
+    <div className="App">
+      <button onClick={notify}>Notify</button>
+      <ToastContainer position="top-left" hideProgressBar />
+    </div>
+  )
 }
 
 export default App
